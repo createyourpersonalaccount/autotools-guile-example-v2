@@ -9,7 +9,6 @@ AC_INIT(
 # AC_CONFIG_AUX_DIR([build-aux])
 # AC_REQUIRE_AUX_FILE([test-driver.scm])
 AM_INIT_AUTOMAKE([foreign info-in-builddir -Wall -Werror])
-AC_PATH_PROG([GUILE], [guile])
 
 # Documentation generation
 AC_CHECK_PROG([MAKEINFO], [makeinfo], [1])
@@ -20,7 +19,6 @@ GUILE_SITE_DIR
 
 # These files will be produced by macro-processing from autoconf.
 AC_CONFIG_FILES([
-#        doc/config.texi
         src/foo/config.scm
         Makefile
 ])
