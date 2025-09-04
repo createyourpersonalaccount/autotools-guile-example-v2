@@ -1,0 +1,4 @@
+* An example autotools project for GNU Guile
+
+Guile compiles scheme (~.scm~) files into Guile Object files (~.go~). An installation procedure should install both the source files and the object files, so that users may inspect the source but there is still the benefit of running compiled code.
+

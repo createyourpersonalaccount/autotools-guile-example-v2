@@ -1,0 +1,5 @@
+(define-module (foo config))
+
+(define-public foo-version "@PACKAGE_VERSION@")
+(define-public foo-bug-report-address "@PACKAGE_BUGREPORT@")
+(define-public foo-package-url "@PACKAGE_URL@")
