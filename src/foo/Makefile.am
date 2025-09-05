@@ -1,4 +1,4 @@
-foodir = $(GUILE_SITE)/foo
+foodir = $(datadir)/$(GUILE2_SITE)/foo
 foo_DATA = \
 	config.scm \
 	factorial.scm
