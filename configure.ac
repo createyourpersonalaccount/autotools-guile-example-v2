@@ -13,13 +13,14 @@ AM_INIT_AUTOMAKE([foreign info-in-builddir -Wall -Werror])
 # Documentation generation
 AC_CHECK_PROG([MAKEINFO], [makeinfo], [1])
 
-GUILE_PROGS
-GUILE_PKG
 GUILE_SITE_DIR
 
 # These files will be produced by macro-processing from autoconf.
 AC_CONFIG_FILES([
-        src/foo/config.scm
         Makefile
+        app/Makefile
+        src/Makefile
+        src/foo/Makefile
+        src/foo/config.scm
 ])
 AC_OUTPUT

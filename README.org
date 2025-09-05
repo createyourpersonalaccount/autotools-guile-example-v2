@@ -2,3 +2,10 @@
 
 Guile compiles scheme (~.scm~) files into Guile Object files (~.go~). An installation procedure should install both the source files and the object files, so that users may inspect the source but there is still the benefit of running compiled code.
 
+The autoconf macros that ship for GNU Guile are found in GNU Guile's ~guile/meta/guile.m4~ file.
+
+In Automake there's /primaries/, which are special suffixes of variables, like: ~_PROGRAMS~, ~_SOURCES~, ~_DATA~, and so on.
+
+
+- [ ] ~GUILE_SITE~ is detected by ~pkg-config~ and cannot be configured to be something else. Is this a deficiency of ~guile.m4~?
+- [ ] ~make distcheck~ does not work. It appears that it attempts to install to ~GUILE_SITE~, which is unconfigurable, and errors out since a normal user cannot write under ~/usr~.
