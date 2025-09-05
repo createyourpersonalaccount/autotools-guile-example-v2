@@ -6,9 +6,9 @@ The autoconf macros that ship for GNU Guile are found in GNU Guile's ~guile/meta
 
 In Automake there's /primaries/, which are special suffixes of variables, like: ~_PROGRAMS~, ~_SOURCES~, ~_DATA~, and so on.
 
-
-- [ ] ~GUILE_SITE~ is detected by ~pkg-config~ and cannot be configured to be something else. Is this a deficiency of ~guile.m4~?
 - [ ] ~make distcheck~ does not work. It appears that it attempts to install to ~GUILE_SITE~, which is unconfigurable, and errors out since a normal user cannot write under ~/usr~.
+- [ ] ~GUILE_SITE~ is detected by ~pkg-config~ and cannot be configured to be something else. Is this a deficiency of ~guile.m4~?
+
 
 ** Progress
 
@@ -21,4 +21,4 @@ This is work in progress. Here is what works so far:
 | ~make dist~      | works correctly                          |
 | ~make distcheck~ | requires ~DESTDIR=/tmp~ (or similar value) |
 
-We still do not have documentation nor unit tests.
+I still do not have documentation nor unit tests, although I know how to put those in; my principal concern is to fix ~distcheck~.
