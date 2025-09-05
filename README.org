@@ -9,3 +9,16 @@ In Automake there's /primaries/, which are special suffixes of variables, like: 
 
 - [ ] ~GUILE_SITE~ is detected by ~pkg-config~ and cannot be configured to be something else. Is this a deficiency of ~guile.m4~?
 - [ ] ~make distcheck~ does not work. It appears that it attempts to install to ~GUILE_SITE~, which is unconfigurable, and errors out since a normal user cannot write under ~/usr~.
+
+** Progress
+
+This is work in progress. Here is what works so far:
+
+| Task           | Status                    |
+|----------------+---------------------------|
+| ~make install~   | installs the Scheme files |
+| ~make uninstall~ | works correctly           |
+| ~make dist~      | works correctly           |
+| ~make distcheck~ | does not work             |
+
+We still do not have documentation nor unit tests.
