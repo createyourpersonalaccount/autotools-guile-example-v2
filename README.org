@@ -14,11 +14,11 @@ In Automake there's /primaries/, which are special suffixes of variables, like: 
 
 This is work in progress. Here is what works so far:
 
-| Task           | Status                    |
-|----------------+---------------------------|
-| ~make install~   | installs the Scheme files |
-| ~make uninstall~ | works correctly           |
-| ~make dist~      | works correctly           |
-| ~make distcheck~ | does not work             |
+| Task           | Status                                   |
+|----------------+------------------------------------------|
+| ~make install~   | installs the Scheme files                |
+| ~make uninstall~ | works correctly                          |
+| ~make dist~      | works correctly                          |
+| ~make distcheck~ | requires ~DESTDIR=/tmp~ (or similar value) |
 
 We still do not have documentation nor unit tests.
